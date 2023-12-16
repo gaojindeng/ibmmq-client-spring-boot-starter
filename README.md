@@ -9,7 +9,8 @@
 - 连接定时保持心跳
 - 超时未获取到返回的消息，可以自定义处理
 ### 使用
-**源码地址：**
+**源码地址：**https://github.com/gaojindeng/ibmmq-client-spring-boot-starter
+
 需要自己把ibm-mq-spring-boot-starter项目install到自己的本地仓库，然后引用：
 ```xml
 <dependency>
@@ -22,7 +23,7 @@
 ```yaml
 
 esb:
-  hostName: 10.0.111.97
+  hostName: 10.0.111.11
   port: 40000
   ccsid: 1208
   channel: SVRCONN_GW_IN
