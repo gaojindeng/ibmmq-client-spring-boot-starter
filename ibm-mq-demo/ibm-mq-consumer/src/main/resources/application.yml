@@ -1,0 +1,28 @@
+server:
+  port: 8080
+project:
+  name: demo
+
+
+esb:
+  hostName: 10.0.111.97
+  port: 40000
+  ccsid: 1208
+  channel: SVRCONN_GW_IN
+  queueManagerName: MQ_Transaction_Server
+  timeout: 60000
+  initPoolSize: 15
+  retryTimes: 3
+  maxPoolSize: 200
+  busyLimit: 50
+  customPool:
+    loan:
+      initPoolSize: 15
+      maxPoolSize: 100
+    core:
+      initPoolSize: 15
+      maxPoolSize: 100
+  sendQueueNames:
+    card: IBM.SERVICE.XXXXXX.REQUESTER.IN
+  receiveQueueNames:
+    card: IBM.SERVICE.XXXXXX.REQUESTER.OUT
