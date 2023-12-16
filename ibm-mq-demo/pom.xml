@@ -12,7 +12,6 @@
     <artifactId>ibm-mq-demo</artifactId>
     <packaging>pom</packaging>
     <modules>
-        <module>ibm-mq-provider</module>
         <module>ibm-mq-consumer</module>
     </modules>
 
